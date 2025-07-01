@@ -35,7 +35,13 @@ public class TestCase1 {
 			System.out.println("Test failed");
 		}	
 		 //4. Close browser
-		driver.close();
+		//driver.close();
 	}
 
 }
+
+
+
+
+
+

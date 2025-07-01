@@ -1,21 +1,18 @@
 package mavenproject1;
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-public class Locators {
+public class Locators{
 
 	public static void main(String[] args) {
 	
 		WebDriver driver=new ChromeDriver();
 		
-		driver.get("https://demo.opencart.com/");
+		//driver.get("https://demo.opencart.com/");
+		driver.get("https://demo.nopcommerce.com/");
 		driver.manage().window().maximize();
 		
-		//name
+		/*name
 		driver.findElement(By.name("search")).sendKeys("mac");
 		
 		//id
@@ -36,13 +33,38 @@ public class Locators {
 		
 		//ClassName
 		List<WebElement> headerLinks= driver.findElements(By.className("list-inline-item"));
-		System.out.println("total number of headers links:"+headerLinks.size());
+		System.out.println("total number of headers links:"+headerLinks.size()); //
+		
+		
+	//CSS Selector  - Cascading style sheets
+		
+		
+		/* tag id  - tag#id (tag is optional)
+		driver.findElement(By.cssSelector("input#small-searchterms")).sendKeys("T-shirts");
+		driver.findElement(By.cssSelector("#small-searchterms")).sendKeys("T-shirts");*/
+		
+		// tag class - tag.classname
+		//driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("T-shirts");
+		
+		// tag attribute  - tag[attribute="value"]
+		
+		//driver.findElement(By.cssSelector("input[placeholder='Search store']")).sendKeys("T-shirts");
+		
+		// tag class  attribute - tag.classname[attribute="value"] */
+		//driver.findElement(By.cssSelector("input.search-box-text[name='q']")).sendKeys("T-shirts");
+		
+		/* Relative xpath
+    Syntax:
+    //tagname[@attribute='value']
+    //*[@attribute='value']
+    
+     */
+		
+		//driver.close();
 		
 		
 		
-		
-		
-		
+	
 	}
 
 }
