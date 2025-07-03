@@ -38,10 +38,11 @@ public class XPathDemo {
 	*/
 	// Chained xpath -- combination of relative and absolute
 	/*
+	 // Xpath axes 
 	boolean status=driver.findElement(By.xpath("//div[@id='logo']/a/img")).isDisplayed();
 	System.out.println(status);
 	*/
-	} 
+	}  
 
 }
 
