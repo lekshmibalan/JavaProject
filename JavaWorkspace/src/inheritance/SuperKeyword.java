@@ -12,6 +12,7 @@ class Dog extends Animal
 	{
 		System.out.println(super.color);
 	}
+	
 }
 
 
@@ -24,3 +25,4 @@ public class SuperKeyword {
 	}
 
 }
+
